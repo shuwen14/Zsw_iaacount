@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.AddAccountPhotoActivity">
+
+    <LinearLayout
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/photo_iv_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/photo_path"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/photo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/photo_tv_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图片地址"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/photo_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo_path"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/photo_bt_photo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="拍照"/>
+
+        <Button
+            android:id="@+id/photo_bt_selectphoto"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/photo_bt_photo"
+            android:layout_marginLeft="20dp"
+            android:text="从相册选择"/>
+
+        <Button
+            android:id="@+id/photo_bt_positive"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/photo_bt_selectphoto"
+            android:text="确认"/>
+
+    </LinearLayout>
+</RelativeLayout>

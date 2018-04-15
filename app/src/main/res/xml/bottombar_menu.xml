@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/bb_menu_addAccount"
+        icon="@drawable/ic_addaccount"
+        title="记账" />
+    <tab
+        id="@+id/bb_menu_queryAccount"
+        icon="@drawable/ic_queryaccount"
+        title="查账" />
+    <tab
+        id="@+id/bb_menu_inex"
+        icon="@drawable/ic_inex"
+        title="收支" />
+    <tab
+        id="@+id/bb_menu_statistic"
+        icon="@drawable/ic_statistic"
+        title="报表" />
+</tabs>

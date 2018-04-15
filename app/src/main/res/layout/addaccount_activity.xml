@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".addaccount.AddAccountActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_add_account"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryBlue">
+
+        <TextView
+            android:id="@+id/tv_add_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="  "
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_ex"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="支出"
+            android:textColor="@color/colorGray"
+            android:layout_marginLeft="100dp"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/bt_in"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="收入"
+            android:textColor="@color/colorGray"
+            android:layout_marginRight="100dp"
+            android:textSize="18sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/fl_add_account"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tb_add_account"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</RelativeLayout>

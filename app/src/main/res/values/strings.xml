@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Zsw_iaccount</string>
+    <string name="hint_right_phone">手机号输入有误</string>
+    <string name="hint_right_password">密码输入有误(6&#8211;16位字母数字组合)</string>
+    <string name="login_success">登录成功</string>
+    <string name="hint_right_phone_or_password">请输入正确的手机号或密码</string>
+    <string name="toast_verify_phone_success">手机号验证成功</string>
+    <string name="hint_right_email">邮箱输入有误</string>
+    <string name="hint_right_name">姓名输入有误</string>
+    <string name="hint_right_age">年龄输入有误</string>
+    <string name="hint_right_phone_or_email_or_password">请输入正确的手机号或邮箱或密码</string>
+    <string name="register_success">注册成功</string>
+    <string name="exist_phone">该手机号已经存在，请重新输入手机号</string>
+</resources>

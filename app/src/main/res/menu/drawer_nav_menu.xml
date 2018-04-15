@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dn_menu_remind"
+        android:icon="@drawable/ic_remind"
+        android:title="记账提醒" />
+    <item
+        android:id="@+id/dn_menu_modifyPassword"
+        android:icon="@drawable/ic_modifypassword"
+        android:title="修改密码" />
+    <item
+        android:id="@+id/dn_menu_exAccountBook"
+        android:icon="@drawable/ic_exaccountbook"
+        android:title="导出账本" />
+    <item
+        android:id="@+id/dn_menu_userInfo"
+        android:icon="@drawable/ic_userinfo"
+        android:title="个人信息" />
+    <item
+        android:id="@+id/dn_menu_aboutApp"
+        android:icon="@drawable/ic_aboutapp"
+        android:title="关于iaccount" />
+    <item
+        android:id="@+id/dn_menu_exitUser"
+        android:icon="@drawable/ic_exituser"
+        android:title="退出登录" />
+
+</menu>

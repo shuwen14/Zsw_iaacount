@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:id="@+id/in_tableLayout">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/bt_normal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/nomal"/>
+            <Button
+                android:id="@+id/bt_baoxiao"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/baoxiao"/>
+            <Button
+                android:id="@+id/bt_gongzi"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/gongzi"/>
+            <Button
+                android:id="@+id/bt_hongbao"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/hongbao"/>
+            <Button
+                android:id="@+id/bt_jianzhi"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/jianzhi"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+            <TextView
+                android:id="@+id/tv_normal"
+                android:text="一般"
+                android:layout_width="50dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:layout_height="20dp"/>
+            <TextView
+                android:id="@+id/tv_baoxiao"
+                android:text="报销"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="20dp"/>
+            <TextView
+                android:id="@+id/tv_gongzi"
+                android:text="工资"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="20dp"/>
+            <TextView
+                android:id="@+id/tv_hongbao"
+                android:text="红包"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="20dp"/>
+            <TextView
+                android:id="@+id/tv_jianzhi"
+                android:text="兼职"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="20dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:id="@+id/bt_jiangjin"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/jiangjin"/>
+            <Button
+                android:id="@+id/bt_touzi"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/touzi"/>
+            <Button
+                android:id="@+id/bt_jiangxuejin"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/jiangxuejin"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="20dp">
+            <TextView
+                android:id="@+id/tv_jiangjin"
+                android:text="奖金"
+                android:layout_width="50dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:layout_height="20dp"/>
+            <TextView
+                android:id="@+id/tv_touzi"
+                android:text="投资"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="20dp"/>
+            <TextView
+                android:id="@+id/tv_jiangxuejin"
+                android:text="奖学金"
+                android:gravity="center"
+                android:layout_width="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="20dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <Spinner
+        android:id="@+id/in_sp_select_pay"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/in_tableLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:entries="@array/pay" />
+
+    <EditText
+        android:id="@+id/in_et_money"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:hint="金额"
+        android:gravity="center"
+        android:layout_below="@+id/in_tableLayout"
+        android:layout_toRightOf="@+id/in_sp_select_pay"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/in_selectDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color1"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_below="@+id/in_sp_select_pay"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/in_selectDateShow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:text="选择日期"
+            android:textColor="@color/color3"
+            android:textSize="15sp" />
+
+        <!--        <DatePicker
+                    android:id="@+id/datePicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />-->
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/in_select_address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/in_selectDate"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/in_bt_address"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_address"/>
+
+        <EditText
+            android:id="@+id/in_et_address"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/in_bt_address"
+            android:gravity="center"
+            android:hint="输入地点/获取当前地点"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/in_select_remark"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/in_select_address"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/in_iv_remark"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_remark"/>
+
+        <EditText
+            android:id="@+id/in_et_remark"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:hint="好记性不如烂笔头，写点备注吧~"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/in_iv_remark"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/in_select_photo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/in_select_remark"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/in_bt_photo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="相片"/>
+
+        <Button
+            android:id="@+id/in_bt_reset"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/in_bt_photo"
+            android:layout_marginLeft="20dp"
+            android:text="再记一笔"/>
+
+        <Button
+            android:id="@+id/in_bt_add"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/in_bt_reset"
+            android:text="添加"/>
+
+    </LinearLayout>
+</RelativeLayout>

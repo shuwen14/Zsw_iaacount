@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/sp_select_month"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/tv_ex"
+        android:layout_toStartOf="@+id/tv_ex"
+        android:entries="@array/month"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_showIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp_select_month"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
+        android:text="收入"
+        android:textColor="#918791" />
+
+    <TextView
+        android:id="@+id/tv_showBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sp_select_month"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="该月剩余"
+        android:textColor="#918791" />
+
+    <TextView
+        android:id="@+id/tv_showEx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_showBalance"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="15dp"
+        android:text="支出"
+        android:textColor="#918791" />
+
+    <TextView
+        android:id="@+id/tv_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_showIn"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="15dp"
+        android:text="null收入"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_showIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="null剩余"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_ex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_showIn"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="15dp"
+        android:text="null支出"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/ib_doaddaccount"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@mipmap/addaccount"
+        android:layout_below="@+id/tv_balance"
+        android:layout_marginTop="15dp"/>
+</RelativeLayout>

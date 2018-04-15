@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".activity.InExActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_inex_account"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryBlue">
+
+        <Button
+            android:id="@+id/inex_bt_ex"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="支出"
+            android:textColor="@color/colorGray"
+            android:layout_marginLeft="100dp"
+            android:onClick="chooseEx"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/inex_bt_in"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="收入"
+            android:textColor="@color/colorGray"
+            android:layout_marginRight="100dp"
+            android:onClick="chooseIn"
+            android:textSize="18sp" />
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/inex_selectDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color1"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/tb_inex_account"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/inex_selectDateShow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="选择日期"
+            android:gravity="center"
+            android:textColor="@color/color3"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/inex_doInEx"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="查询"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/inex_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inex_selectDate"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color5"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="分类"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#EEEEEF" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color5"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="地点"
+            android:textSize="24sp" />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#EEEEEF" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color5"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="方式"
+            android:textSize="24sp" />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#EEEEEF" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color5"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="金额"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#EEEEEF" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_show"
+        android:layout_below="@+id/inex_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
